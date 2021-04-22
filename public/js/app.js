@@ -9,7 +9,7 @@ const handleForecast = (e) =>{
     const errp = document.querySelector('.err');
     forec.textContent="Loading...";
     errp.textContent="";
-    fetch('http://localhost:5000/weather?address='+inp.value)
+    fetch('/weather?address='+inp.value)
     .then((res)=>{
         res.json()
         .then((data)=>{
